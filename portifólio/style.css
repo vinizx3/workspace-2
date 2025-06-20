@@ -1,0 +1,224 @@
+* {
+   padding: 0px;
+   margin: 0px; 
+}
+
+body {
+
+    background-color: #111111;
+    color: #fff;
+}
+
+
+nav {
+    display: flex;
+    position: fixed;
+    margin-left: 23rem;
+    margin-top: 2.2rem;
+    height: 2.5rem;
+    align-items: center;
+}
+
+.hidden {
+    visibility: none;
+    color: transparent;
+}
+
+.nav-item-link {
+    font-family: "Poppins";
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+a.nav-item-link:hover {
+    background-color: rgb(45, 45, 45);
+    font-size: 1.4rem;
+    border-radius: 5rem;
+    transition: .3s;
+} 
+
+
+header {
+    display: grid;    
+    grid-template-columns: 1fr 2fr;
+    font-size: 1.4rem;
+    margin-top: 7.5rem;
+    margin-left: 13rem;
+    margin-bottom: 8rem;
+    animation-name: animation;
+    animation-duration: 2s;
+}
+
+@keyframes animation {
+
+    from{
+        opacity: 0;
+        filter: blur(0.7rem);
+        transform: translateX(5rem);
+    }
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+}
+
+
+.grid-content {
+    margin-right: 37rem;
+    width: 25rem;
+}
+
+.style-div {
+    background-color: rgb(49, 49, 49);
+    width: 0.1rem;
+    height: 23.5rem;
+}
+
+div span{
+    width: 100%;
+    font-size: 0.5rem;
+    color: transparent;
+}
+
+.span-style-1 {
+    background: linear-gradient(to right, #808aee, #8af1ff, #79eed8);
+}
+.span-style-2 {
+    background: linear-gradient(to right, #909090,#a8a8a8);
+}
+.span-style-3 {
+    background: linear-gradient(to right, #d897f0, #a5a3f3);
+}
+.span-style-4 {
+    background: linear-gradient(to right, #f8eb99, #f3b377, #f8784a);
+}
+.span-gap {
+    margin-left: 2.3rem;
+}
+.circle {
+    border-radius: 50%;
+    background: linear-gradient(to right, #bebcbc,#d1cbcb);
+}
+
+.info {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    font-family: "Poppins";
+    text-wrap: nowrap;
+}
+.p {
+    border-right: .35rem solid;
+    white-space: nowrap;
+    font-size: 1.25rem;
+    overflow: hidden;
+    width: 21ch;
+    animation: typing 2s steps(21) , bliking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from{ width: 0ch;}
+}
+@keyframes bliking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+p {
+    font-size: 1.1rem;
+    font-family: "Poppins";
+}
+
+h2 {
+ font-size: 2rem
+}
+
+main {
+display: grid;
+justify-content: center;
+margin: 0 8rem;
+gap: 6rem;
+}
+
+section span {
+    color: rgb(92 135 246);
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.div-underline {
+    display: inline-block;
+    background-color: rgb(92, 135, 246);
+    height: 0.15rem;
+    width: 1rem;
+    margin-bottom: .2rem;
+    border-radius: 5rem;
+}
+
+section h2, span {
+    margin-bottom: 1.7rem;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+i{
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+
+.email:hover {
+    color: #821717
+}
+
+.instagram:hover {
+    color: #a338d4;
+}
+
+.whatsapp:hover {
+    color: #4fdda4;
+}
+
+.github:hover {
+    color: #5a0dc0;
+}
+
+.linkedin:hover {
+    color: #244ae1;
+}
+
+footer {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.ativo-bar {
+    background-color: transparent;
+    border: 1px solid rgb(66, 66, 66);
+    backdrop-filter: blur(5px);
+    border-radius: 5rem;
+    transition: 1s ease-in-out;
+}
+
+.item-select {
+    background-color: rgb(45, 45, 45);
+    border-radius: 5rem;
+}
+
+::-webkit-scrollbar{
+    visibility: hidden;
+}
